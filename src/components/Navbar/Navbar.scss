@@ -36,9 +36,11 @@ $navbar-width: 211px;
         .nav-item {
             display: flex;
             align-items: center;
-            grid-gap: 15px;
-            width: $navbar-width;
-
+            grid-gap: 20px;
+            // width: $navbar-width;
+            max-width: $navbar-width;
+            min-width: $navbar-width;
+            // transition: all .1s cubic-bezier(0.4, 0, 1, 1);
             font-weight: 700;
             font-size: 14px;
             text-transform: uppercase;
@@ -46,8 +48,14 @@ $navbar-width: 211px;
             padding: 10px 20px;
 
             .text {
+                transition: all .3s cubic-bezier(0.4, 0, 1, 1);
+                white-space: nowrap;
                 opacity: 1;
                 width: 100%;
+            }
+
+            &:nth-child(1) {
+                background: #3DBDF6;
             }
 
             &:hover {
@@ -77,12 +85,12 @@ $navbar-width: 211px;
     }
 
     .navbar-content {
+
+
         .nav-item {
             animation: doSmall .3s forwards;
 
             .text {
-                white-space: nowrap;
-                transition: all .2s ease-in;
                 opacity: 0;
                 width: 0px;
             }
@@ -95,6 +103,7 @@ $navbar-width: 211px;
     z-index: 2;
     width: 100%;
     padding: 20px;
+    background: #F7FAFB;
 
     header {
         width: 100%;
@@ -156,10 +165,11 @@ $navbar-width: 211px;
     }
 
     .navbar .navbar-header {
-        .nav-navigator{
+        .nav-navigator {
             opacity: 0;
             visibility: hidden;
         }
+
         .logo {
             display: block;
             opacity: 1;
