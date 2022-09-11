@@ -7,7 +7,7 @@ import VpsPlan from "./VpsPlan/VpsPlan";
 const VPSOrder = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [Data, setData] = useState(null);
-
+  const [FilteredVpsPlan, setFilteredVpsPlan] = useState([]);
   useEffect(() => {
     getData().then((res) => {
       setIsLoading(false);
@@ -17,6 +17,10 @@ const VPSOrder = () => {
 
     return () => {};
   }, []);
+
+  // const FilterVpsPlan = () => {
+
+  // };
 
   if (!isLoading && !Data) return <h1>Ошибка с сервером</h1>;
 
@@ -30,9 +34,9 @@ const VPSOrder = () => {
           <h1 className="header-order-vps">Заказать vps</h1>
         </div>
 
-        <VpsOption Data={Data.categories} />
+        <VpsOption Data={Data.categories} setFilteredVpsPlan={setFilteredVpsPlan} />
 
-        <VpsPlan />
+        <VpsPlan Data={FilteredVpsPlan.length > 0 ? FilteredVpsPlan : Data.vpsPlans} />
       </div>
     </Context.Provider>
   );

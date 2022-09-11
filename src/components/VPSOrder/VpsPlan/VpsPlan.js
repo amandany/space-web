@@ -1,14 +1,13 @@
-import React, { useContext } from "react";
-import Context from "../../../context/Context";
+import React from "react";
 import VpsCard from "../VpsCard/VpsCard";
 import './VpsPlan.scss'
-const VpsPlan = () => {
-  const { Data } = useContext(Context);
+const VpsPlan = ({Data}) => {
 
+  console.log("Data",Data)
 
   return (
     <div className="vps-plans">
-      {Data.vpsPlans.map((plan, index) => {
+      {Data.map((plan, index) => {
         return <VpsCard key={index} plan={plan} />;
       })}
     </div>
