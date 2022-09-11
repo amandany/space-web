@@ -11,7 +11,7 @@ $navbar-width: 211px;
     min-height: calc(100vh - 200px);
     background: #062436;
     color: white;
-    transition: all .25s cubic-bezier(0.4, 0, 1, 1);
+    transition: all .15s cubic-bezier(0.4, 0, 1, 1);
 
     .navbar-header {
         height: 75px;
@@ -48,7 +48,7 @@ $navbar-width: 211px;
             padding: 10px 20px;
 
             .text {
-                transition: all .2s cubic-bezier(0.4, 0, 1, 1);
+                transition: all .15s cubic-bezier(0.4, 0, 1, 1);
                 white-space: nowrap;
                 opacity: 1;
                 width: 100%;
