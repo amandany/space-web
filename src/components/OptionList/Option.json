@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "title": "Все"
+    },
+    {
+      "id": 1,
+      "title": "NVMe (KVM)"
+    },
+    {
+      "id": 2,
+      "title": "Большого объема (HDD)"
+    },
+    {
+      "id": 3,
+      "title": "HighCPU (TURBO)"
+    }
+  ],
+  "distribution": [
+    {
+      "id": 0,
+      "title": "Ubuntu 20.04 LTS"
+    }
+  ],
+  "system": [
+    {
+      "id": 0,
+      "title": "Без ПО"
+    }
+  ]
+}

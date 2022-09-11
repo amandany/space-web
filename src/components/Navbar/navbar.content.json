@@ -1,0 +1,78 @@
+[
+  {
+    "title": "Заказать VPS",
+    "img_name": "vps.svg",
+    "content": []
+  },
+  {
+    "title": "Аккаунт",
+    "img_name": "icon_account.svg",
+    "content": [
+      {
+        "title": "Профиль",
+        "img_name": "Profile.svg"
+      },
+      {
+        "title": "Финансы",
+        "img_name": "Finances.svg"
+      },
+      {
+        "title": "Услуги",
+        "img_name": "icon_service.svg"
+      }
+    ]
+  },
+  {
+    "title": "СЕРВЕР",
+    "img_name": "icon_sersev.svg",
+    "content": []
+  },
+  {
+    "title": "МОНИТОРИНГ",
+    "img_name": "Group.svg",
+    "content": []
+  },
+  {
+    "title": "Домены",
+    "img_name": "Group2101.svg",
+    "content": [
+        {
+            "title": "Мои домены",
+            "img_name": "mydomen.svg"
+          },
+          {
+            "title": "Доменные бонусы",
+            "img_name": "star.svg"
+          },
+          {
+            "title": "Доменные персоны",
+            "img_name": "Domains_persons.svg"
+          }
+    ]
+  },
+  {
+    "title": "SSL",
+    "img_name": "SSL.svg",
+    "content": []
+  },
+  {
+    "title": "МАГАЗИН",
+    "img_name": "Shop.svg",
+    "content": []
+  },
+  {
+    "title": "SEO и реклама",
+    "img_name": "Group2103.svg",
+    "content": []
+  },
+  {
+    "title": "Поддержка",
+    "img_name": "Help.svg",
+    "content": []
+  },
+  {
+    "title": "ЕСТЬ ИДЕЯ",
+    "img_name": "Have_idea.svg",
+    "content": []
+  }
+]

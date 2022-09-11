@@ -1,0 +1,28 @@
+.VPS-order {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 4px #E3E9EC;
+    padding: 20px;
+
+    .header {
+        border-bottom: 2px solid #F7FAFB;
+
+        .header-account {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #062436;
+            margin-bottom: 11px;
+        }
+
+        .header-order-vps {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #062436;
+        }
+    }
+}

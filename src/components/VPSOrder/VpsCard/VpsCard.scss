@@ -1,0 +1,158 @@
+.VpsCard {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    background: #E0F6FC;
+    border-radius: 4px;
+    width: 232px;
+
+    .proccessor {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 25px;
+            max-height: 25px;
+            margin-right: 18px;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+        }
+    }
+
+    .price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    .specifications {
+        display: flex;
+        grid-gap: 10px;
+
+        .specifications-option {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 19px;
+            color: #62686C;
+        }
+
+        .specifications-characteristic {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+    }
+
+    .distribution .distribution-header,
+    .system .system-header {
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+
+        color: #62686C;
+    }
+
+    .data-center {
+        width: 100%;
+
+        .name {
+            margin-bottom: 8px;
+        }
+
+        .city {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: min-content;
+            background: #FFFFFF;
+            border: 1px solid #3DBDF6;
+            border-radius: 10px;
+            // padding: 0 15px;
+
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                // padding: 0 15px;
+                white-space: nowrap;
+            }
+
+            .spb {
+                background: #3DBDF6;
+                border: 1px solid #3DBDF6;
+                border-radius: 10px;
+                color: #FFFFFF;
+                padding: 0 15px;
+            }
+
+            .moscow {
+                text-align: right;
+                margin-right: 14px;
+                color: #3DBDF6;
+            }
+        }
+    }
+
+    .advantages {
+        display: flex;
+        grid-gap: 18px;
+        align-items: center;
+
+        .text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+        }
+    }
+
+    .btn-order {
+        outline: none;
+        background: #3DBDF6;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 2px;
+        border: 0;
+        width: 167px;
+        height: 36px;
+        align-self: center;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        cursor: pointer;
+
+        &:hover {
+            background: #37ACE0;
+        }
+
+        &:focus {
+            background: #37ACE0;
+        }
+
+        &:active {
+            background: #0086C2;
+        }
+    }
+
+}

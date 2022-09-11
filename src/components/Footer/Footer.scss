@@ -1,0 +1,85 @@
+.footer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px;
+    background: #F7FAFB;
+    padding: 20px;
+
+    .info {
+        width: 180px;
+
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+
+            span {
+                cursor: pointer;
+                color: #3DBDF6;
+            }
+        }
+    }
+
+    .download {
+        justify-self: center;
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+        }
+
+        .link-img {
+            cursor: pointer;
+            display: flex;
+            grid-gap: 10px;
+
+            img {
+                max-width: 125px;
+            }
+        }
+    }
+
+    .telephone {
+
+        justify-self: flex-end;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #3DBDF6;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        a span {
+
+            color: #000000;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        .telephone {
+            justify-self: flex-start;
+        }
+
+        .download {
+            justify-self: flex-start;
+        }
+    }
+
+}

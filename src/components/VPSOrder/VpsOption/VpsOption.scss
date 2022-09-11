@@ -1,0 +1,24 @@
+.vps-option {
+    position: relative;
+    // width: 232px;
+    max-width: 350px;
+    min-width: 200px;
+    // width: fit-content;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    .name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #7A8185;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vps-option{
+        max-width: none;
+        width: 100%;
+    }
+}
