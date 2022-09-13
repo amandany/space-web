@@ -4,10 +4,12 @@ import Context from "../../context/Context";
 import VpsOption from "./VpsOption/VpsOption";
 import "./VPSOrder.scss";
 import VpsPlan from "./VpsPlan/VpsPlan";
+
 const VPSOrder = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [Data, setData] = useState(null);
   const [FilteredVpsPlan, setFilteredVpsPlan] = useState([]);
+
   useEffect(() => {
     getData().then((res) => {
       setIsLoading(false);
@@ -18,14 +20,12 @@ const VPSOrder = () => {
     return () => {};
   }, []);
 
-  // const FilterVpsPlan = () => {
-
-  // };
-
   if (!isLoading && !Data) return <h1>Ошибка с сервером</h1>;
 
   if (isLoading || !Data) return <div>Загрузка...</div>;
+
   const contx = { Data };
+
   return (
     <Context.Provider value={contx}>
       <div className="VPS-order">

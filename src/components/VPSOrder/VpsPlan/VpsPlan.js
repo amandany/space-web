@@ -3,8 +3,6 @@ import VpsCard from "../VpsCard/VpsCard";
 import './VpsPlan.scss'
 const VpsPlan = ({Data}) => {
 
-  console.log("Data",Data)
-
   return (
     <div className="vps-plans">
       {Data.map((plan, index) => {

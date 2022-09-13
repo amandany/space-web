@@ -16,7 +16,6 @@ const VpsCard = ({ plan }) => {
   const [FilteredSystem, setFilteredSystem] = useState([]);
 
   const onDistributionActiveOption = (selectedOption) => {
-    console.log("onDistributionActiveOption", selectedOption);
     if (!selectedOption.panel_type.includes(SystemActiveOption.name)) {
       setSystemActiveOption(Data.selectPanel[0]);
     }
@@ -25,12 +24,10 @@ const VpsCard = ({ plan }) => {
       selectedOption.panel_type.includes(el.name),
     );
     setFilteredSystem(FilteredSystem)
-
     setDistributionActiveOption(selectedOption);
   };
 
   const onSystemActiveOption = (selectedOption) => {
-    console.log("onSystemActiveOption", selectedOption);
     setSystemActiveOption(selectedOption);
   };
 

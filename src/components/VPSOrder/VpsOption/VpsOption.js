@@ -13,7 +13,6 @@ const VpsOption = ({ Data, setFilteredVpsPlan }) => {
   const onOption = (selectedOption) => {
     if (selectedOption.slug !== "all") {
       const Filtered = Store.vpsPlans.filter((el) => el.category === selectedOption.slug);
-      console.warn("Filtered", Filtered);
       setFilteredVpsPlan(Filtered);
     } else {
       setFilteredVpsPlan([]);
